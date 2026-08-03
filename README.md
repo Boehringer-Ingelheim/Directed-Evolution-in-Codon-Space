@@ -1,5 +1,3 @@
-![Codon Evolution Logo](logo/logo.png)
-
 # Directed Evolution in Codon Space
 
 **This work shows how making a few targeted synonymous mutations to already-optimized coding sequences can make them significantly better.**
@@ -284,8 +282,3 @@ and the underlying model:
 }
 ```
 
----
-
-## License
-
-MIT (see `LICENSE`).
