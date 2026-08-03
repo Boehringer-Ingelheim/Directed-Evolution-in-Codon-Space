@@ -54,11 +54,6 @@ huggingface-cli login
 export HF_TOKEN=hf_xxx
 ```
 
-To point at a fork, a pinned commit, or a mirror without touching code:
-
-```bash
-export SYNCODONLM_MODEL_ID="your-fork/SynCodonLM-v2"
-```
 
 ---
 
