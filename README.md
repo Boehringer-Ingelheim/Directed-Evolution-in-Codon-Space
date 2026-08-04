@@ -235,22 +235,6 @@ Three things make this a *directed evolution* tool rather than a codon optimizer
 
 The 10% cap matters. It's not just a safety rail — it's the mechanism that keeps the refined sequence *biologically adjacent* to a construct that already works. In the paper, this cap preserved product-quality attributes in the vast majority of cases while still delivering a significant titer improvement across the panel.
 
----
-
-## Repo layout
-
-```
-.
-├── scripts/
-│   ├── example.py        # runnable end-to-end demo of all three modes
-│   ├── evolve.py         # Evolver class: HF loading, evo_score, scan_mutations, optimize
-│   └── codon_utils.py    # genetic code, DNA helpers, result dataclasses, printers
-└── README.md
-```
-
-Run examples from inside `scripts/` (or add it to `PYTHONPATH`) so the flat imports (`from evolve import Evolver`, `from codon_utils import ...`) resolve correctly.
-
----
 
 ## Citation
 
