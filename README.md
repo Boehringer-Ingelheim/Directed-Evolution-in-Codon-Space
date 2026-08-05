@@ -240,8 +240,20 @@ The 10% cap matters. It's not just a safety rail — it's the mechanism that kee
 
 If you use this repo, please cite:
 
-> Heuschkel J., Kingsley L., Reed J., Li D., Warner M., Pefaur N., Cramer S.
-> **Directed Evolution in Codon Space.** (2026).
+```bibtex
+@article {Heuschkel2026.08.03.742557,
+	author = {Heuschkel, James and Kingsley, Laura and Reed, Jon and Li, Di and Warner, Matthew and Pefaur, Noah and Cramer, Steven},
+	title = {Directed Evolution in Codon Space},
+	elocation-id = {2026.08.03.742557},
+	year = {2026},
+	doi = {10.64898/2026.08.03.742557},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Directed evolution is commonly used in protein engineering, where mature molecules are routinely improved through iterative local search of amino acid space. Here, we extend this principle to coding DNA. We developed a language-model-guided framework that iteratively refined industry-optimized coding sequences of clinical-stage therapeutics through synonymous exploration of codon space. Across 24 antibody-based therapeutics, SynCodonLM-guided refinement significantly increased recombinant expression in CHO cells for 18 molecules (75\% responder rate), without detectable compromise of product-quality or biophysical attributes. Moreover, changes in model likelihood predicted expression gains more effectively than heuristic statistical or mRNA-structure descriptors, despite no explicit expression objective. Codon-level likelihood also tracked temporal progression in influenza A H1N1 sequences, indicating the model captures evolutionary signal. These results show that even production-optimized sequences retain accessible fitness in synonymous codon space, establishing directed evolution as a practical strategy to improve biologic expression, a key manufacturing bottleneck, without altering protein sequence.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2026/08/04/2026.08.03.742557},
+	eprint = {https://www.biorxiv.org/content/early/2026/08/04/2026.08.03.742557.full.pdf},
+	journal = {bioRxiv}
+}
+```
 
 and the underlying model:
 
