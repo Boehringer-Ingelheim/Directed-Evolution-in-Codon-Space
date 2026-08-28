@@ -30,7 +30,7 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoConfig, AutoModelForMaskedLM, AutoTokenizer
 
-from .codon_utils import (
+from codon_utils import (
     DEFAULT_SYNONYMOUS_CODONS,
     ChangeStep,
     EvoScore,
@@ -49,7 +49,7 @@ from .codon_utils import (
 # -------------------------------------------------------------------
 SYNCODONLM_MODEL_ID = os.environ.get(
     "SYNCODONLM_MODEL_ID",
-    "Boehringer-Ingelheim/SynCodonLM-v2",
+    "jheuschkel/SynCodonLM-V2",
 )
 
 
@@ -93,7 +93,7 @@ class Evolver:
             hf_kwargs["revision"] = revision
 
         if verbose:
-            print(f"[Evolver] Loading SynCodonLM v2 from Hugging Face: {model_id}")
+            print(f"[Evolver] Loading SynCodonLM V2 from Hugging Face: {model_id}")
             if revision:
                 print(f"[Evolver]   revision: {revision}")
             print(f"[Evolver]   device: {self.device}   dtype: {self.dtype}")
